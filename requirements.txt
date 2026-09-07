@@ -1,0 +1,5 @@
+# Python 依赖 —— 证件照抠图后端 matte_biref.py 运行所需
+# 另一台电脑部署时：pip3 install -r requirements.txt  （建议用 venv）
+onnxruntime==1.17.3
+numpy>=1.24
+Pillow>=9.0

@@ -1,0 +1,38 @@
+# ── Python 虚拟环境 ──
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# ── Node 依赖 ──
+node_modules/
+
+# ── 运行日志 ──
+logs/
+
+# ── 本地回退备份（不入库，纯冗余）──
+*.bak_*
+*.bak5
+*mine_backup*
+
+# ── 编译/缓存/系统 ──
+dist/
+.DS_Store
+Thumbs.db
+
+# ── 环境变量 ──
+.env
+.env.*
+
+# ── 空目录 ──
+src/
+
+# 大模型(超 GitHub 100MB 单文件限制,不入库;本机保留,另一台手动拷贝到 models/)
+models/birefnet_swin_tiny.onnx
+models/retinaface-resnet50.onnx
+models/birefnet_swin_tiny_int8.onnx
+models/rmbg.onnx
+models/rmbg_quant.onnx
+
+# ── 运行时暂存(用户照片抠图结果=用户隐私数据,绝不上传。另一台部署后也会自建)──
+cache/
